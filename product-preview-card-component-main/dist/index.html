@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Product preview card component</title>
+    <link rel="stylesheet" href="./output.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body class="font-montserrat">
+    <main class="min-h-screen bg-cream flex items-center justify-center p-6">
+      <article
+        class="grid w-full max-w-[600px] grid-cols-1 overflow-hidden rounded-xl bg-white shadow-lg md:grid-cols-2"
+      >
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="./images/image-product-mobile.jpg"
+          />
+          <img
+            src="./images/image-product-desktop.jpg"
+            alt="Descripción del producto"
+            class="aspect-square w-full object-cover md:h-full"
+          />
+        </picture>
+
+        <div class="flex flex-col justify-center gap-y-4 p-6 md:p-8">
+          <p class="text-xs uppercase tracking-[0.3em] text-grey">Perfume</p>
+
+          <h1 class="font-fraunces text-3xl font-bold">
+            Gabrielle Essence Eau De Parfum
+          </h1>
+
+          <p class="text-sm font-medium text-grey">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="precio flex items-center gap-4">
+            <p class="font-fraunces text-3xl font-bold text-green-500">
+              $149.99
+            </p>
+            <del class="text-xs text-grey line-through">$169.99</del>
+          </div>
+
+          <button
+            class="rounded-lg bg-green-500 px-5 py-3 font-semibold text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2 w-full inline-flex items-center justify-center gap-2 transition-colors duration-300"
+          >
+            <img src="./images/icon-cart.svg" />
+            Añadir al carrito
+          </button>
+        </div>
+      </article>
+    </main>
+    <footer
+      class="mx-auto mt-6 flex w-fit max-w-full flex-wrap justify-center gap-x-1 rounded-full bg-white px-4 py-2 text-center text-xs text-grey shadow-sm"
+    >
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        class="font-semibold text-green-700 transition-colors hover:text-green-500"
+        >Frontend Mentor</a
+      >. Coded by
+      <span class="font-semibold text-green-700">programmingproof</span>.
+    </footer>
+  </body>
+</html>
