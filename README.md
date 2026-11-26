@@ -71,17 +71,6 @@ clonado necesita `npm install` una vez para restaurar sus dependencias; después
 El CSS de entrada está en `src/input.css` y el CSS generado se guarda en
 `src/output.css`.
 
-## Sincronizar cambios con retos-Frontend
-
-Ejecuta `.\auto-subir-a-retos.ps1` desde la raíz del repositorio. El script usa
-el nombre de la carpeta como rama (convierte espacios en guiones), prepara un
-commit inicial con los archivos existentes y publica los cambios posteriores
-tras unos segundos sin guardados. Mantén la ventana de PowerShell abierta para
-que el monitor siga activo; usa `Ctrl+C` para detenerlo.
-
-No incluye `.vscode`, `node_modules` ni `.git`. Cada grupo de cambios genera un
-commit automático y se sube a la rama del proyecto en `retos-Frontend`.
-
 ## Usar esta carpeta directamente
 
 En esta carpeta, ejecuta `npm install` una vez y luego `npm run dev`. Abre
