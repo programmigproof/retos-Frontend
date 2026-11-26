@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="build.css" />
+
+    <title>Frontend Mentor | Four card feature section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body class="bg-off-white font-poppins text-[0.9375rem] text-grey-400">
+    <main class="container max-w-[23.4375rem] md:max-w-[90rem] mx-auto">
+      <header class="text-center mt-14 mb-10 mx-6 md:mt-28">
+        <h1
+          class="font-light text-[1.5rem] leading-[1.4] text-grey-400 md:text-4xl"
+        >
+          Reliable, efficient delivery
+          <span
+            class="font-bold text-grey-500 block text-[1.5rem] leading-[1.4] md:text-4xl"
+            >Powered by Technology</span
+          >
+        </h1>
+        <p class="mt-4 md:max-w-lg mx-auto">
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful.
+        </p>
+      </header>
+      <section
+        class="cards m-8 mt-14 grid grid-cols-1 gap-8 md:grid-cols-3 md:max-w-[70rem] md:mx-auto"
+      >
+        <article
+          class="card border-t-[0.25rem] border-cyan w-full h-[15.625rem] rounded-md shadow-card p-6 pb-6 flex flex-col bg-white md:row-span-2 md:self-center"
+        >
+          <h2 class="font-bold text-grey-500 text-[1.25rem] leading-[1.4]">
+            Supervisor
+          </h2>
+          <p>Monitors activity to identify project roadblocks</p>
+          <img
+            class="mt-auto self-end"
+            src="./images/icon-supervisor.svg"
+            alt=""
+          />
+        </article>
+        <article
+          class="card border-t-[0.25rem] border-red w-full h-[15.625rem] rounded-md shadow-card p-6 pb-6 flex flex-col bg-white md:col-start-2"
+        >
+          <h2 class="font-bold text-grey-500 text-[1.25rem] leading-[1.4]">
+            Team Builder
+          </h2>
+          <p>
+            Scans our talent network to create the optimal team for your project
+          </p>
+          <img
+            class="mt-auto self-end"
+            src="./images/icon-team-builder.svg"
+            alt=""
+          />
+        </article>
+        <article
+          class="card border-t-[0.25rem] border-orange w-full h-[15.625rem] rounded-md shadow-card p-6 pb-6 flex flex-col bg-white md:col-start-2"
+        >
+          <h2 class="font-bold text-grey-500 text-[1.25rem] leading-[1.4]">
+            Karma
+          </h2>
+          <p>Regularly evaluates our talent to ensure quality</p>
+          <img class="mt-auto self-end" src="./images/icon-karma.svg" alt="" />
+        </article>
+        <article
+          class="card border-t-[0.25rem] border-blue w-full h-[15.625rem] rounded-md shadow-card p-6 pb-6 flex flex-col bg-white md:self-center md:row-span-2 md:col-start-3 md:row-start-1"
+        >
+          <h2 class="font-bold text-grey-500 text-[1.25rem] leading-[1.4]">
+            Calculator
+          </h2>
+          <p>
+            Uses data from past projects to provide better delivery estimates
+          </p>
+          <img
+            class="self-end mt-auto"
+            src="./images/icon-calculator.svg"
+            alt=""
+          />
+        </article>
+      </section>
+    </main>
+    <footer class="attribution text-center mt-8 mb-8">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by
+      <a
+        class="text-blue hover:bg-blue hover:text-black"
+        href="https://app.netlify.com/teams/gentrhon666/projects"
+        >ProgrammingProof</a
+      >.
+    </footer>
+  </body>
+</html>
